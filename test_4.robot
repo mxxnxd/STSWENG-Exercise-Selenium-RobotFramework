@@ -16,6 +16,6 @@ User can open home page
     input username                      data-test="username"                 problem_user
     input password                      data-test="password"                 secret_sauce
     click login button                  Successfully logged in
-    page should contain                 a broken inventory page
+    page should contain                 css:img.inventory_item_img[src="/static/media/sl-404.168b1cce.jpg"]
 
 *** Keywords ***

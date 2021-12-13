@@ -12,10 +12,11 @@ User can open home page
     [Documentation]                     As a locked out user, I cannot log in successfully
 
     open browser                        ${DEMO_URL}     ${BROWSER}
-    maximize browser window             set window size                     1552x840
-    input username                      data-test="username"                 locked_out_user
-    input password                      data-test="password"                 secret_sauce
-    click login button                  unsuccessful login
+    set window size                     1552x840
+    click                               css=*[data-test="username"]
+    type                                css=*[data-test="username"]                 locked_out_user
+    type                                css=*[data-test="password"]                 secret_sauce
+    click                               css=*[data-test="login-button"]
     page should contain                 Epic sadface: Sorry, this user has been locked out.
 
 *** Keywords ***
