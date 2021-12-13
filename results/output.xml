@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.9.0 on win32)" generated="20211213 23:15:36.878" rpa="false" schemaversion="2">
+<suite id="s1" name="Test 1" source="C:\Users\Maxson Chan\Desktop\STSWENG-Exercise-Selenium-RobotFramework\test_1.robot">
+<test id="s1-t1" name="User can open home page">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${DEMO_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211213 23:15:37.169" level="INFO">Opening browser 'gc' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20211213 23:15:37.168" endtime="20211213 23:15:39.041"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<arg>set window size</arg>
+<arg>1552x840</arg>
+<doc>Maximizes current browser window.</doc>
+<msg timestamp="20211213 23:15:39.042" level="FAIL">Keyword 'Selenium2Library.Maximize Browser Window' expected 0 arguments, got 2.</msg>
+<status status="FAIL" starttime="20211213 23:15:39.042" endtime="20211213 23:15:39.043"/>
+</kw>
+<kw name="input username">
+<arg>data-test="username"</arg>
+<arg>standard_user</arg>
+<status status="NOT RUN" starttime="20211213 23:15:39.047" endtime="20211213 23:15:39.047"/>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<arg>data-test="password"</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211213 23:15:39.048" endtime="20211213 23:15:39.048"/>
+</kw>
+<kw name="click login button">
+<arg>successfully logs in</arg>
+<status status="NOT RUN" starttime="20211213 23:15:39.052" endtime="20211213 23:15:39.052"/>
+</kw>
+<doc>As a user I can open the home page and log in</doc>
+<status status="FAIL" starttime="20211213 23:15:37.167" endtime="20211213 23:15:39.053">Keyword 'Selenium2Library.Maximize Browser Window' expected 0 arguments, got 2.</status>
+</test>
+<doc>This is a basic test</doc>
+<status status="FAIL" starttime="20211213 23:15:36.881" endtime="20211213 23:15:39.059"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test 1">Test 1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
