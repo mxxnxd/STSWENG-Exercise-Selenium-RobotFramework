@@ -12,10 +12,11 @@ User can open home page
     [Documentation]                     As a problem user, I should see a broken inventory page when logged in
 
     open browser                        ${DEMO_URL}     ${BROWSER}
-    maximize browser window             set window size                     1552x840
-    input username                      data-test="username"                 problem_user
-    input password                      data-test="password"                 secret_sauce
-    click login button                  Successfully logged in
+    set window size                     1552x840
+    click                               css=*[data-test="username"]
+    type                                css=*[data-test="username"]                 problem_user
+    type                                css=*[data-test="password"]                 secret_sauce
+    click                               css=*[data-test="login-button"]
     page should contain                 css:img.inventory_item_img[src="/static/media/sl-404.168b1cce.jpg"]
 
 *** Keywords ***
